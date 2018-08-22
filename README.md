@@ -104,12 +104,12 @@ CMD ["app.py"]
 
 #### Creating the Dockerfile
 ```
-sudo docker build --no-cache -t mongo_preinstalled .
+docker build --no-cache -t python .
 ```
 
 #### Running the created container
 ```
-sudo docker run -it -v /home/adityakarnik:/home -p 9012:9012 mongo_preinstalled /bin/bash
+docker run -p 5000:5000 --name python python
 ```
 
 #### Removing the images and all the containers
